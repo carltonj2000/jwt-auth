@@ -1,0 +1,38 @@
+### This file requires the vscode extension - REST Client 
+POST http://localhost:4000/login
+###
+POST http://localhost:4000/login
+content-Type: application/json
+
+{
+  "username": "carlton" 
+}
+###
+POST http://localhost:4000/login
+content-Type: application/json
+
+{
+  "username": "jeffrey" 
+}
+
+
+###
+GET http://localhost:3000/posts
+###
+GET http://localhost:3000/posts
+Authorization: Bearer wrong
+###
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNhcmx0b24iLCJpYXQiOjE1OTM1NDczNDl9.2QJmuP0zEvEwS6bGIuvzyBc2Xv1ne19MvgjQr4q2P40
+###
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImplZmZyZXkiLCJpYXQiOjE1OTM1NTc4MjAsImV4cCI6MTU5MzU1Nzg4MH0.sF-FrSRc-9euS4vdVwFB-UbRfK9MiJnunxYgSIUCjD8
+
+###
+POST http://localhost:4000/token
+content-Type: application/json
+
+{
+  "refreshToken": "jeffrey" 
+}
+
